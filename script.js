@@ -6,3 +6,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    var imgElement = document.getElementById('animatedImage');
+    
+    // Ajuste esses valores conforme necessário
+    var zoomFactor = 0.5;
+    var maxZoomOut = 0.8;
+
+    // Calcule o zoom-out com base no scroll
+    var zoomLevel = 1 - (scrollPosition * zoomFactor / window.innerHeight);
+
+    // Limite o zoom-out para evitar que a imagem fique muito pequena
+    zoomLevel = Math.max(zoomLevel, maxZoomOut);
+
+    // Aplique a transformação de zoom-out
+    imgElement.style.transform = 'scale(' + zoomLevel + ')';
+});
+

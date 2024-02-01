@@ -1,7 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    background-color:rgba(110, 66, 145, 1);
+    background-color:rgba(214, 222, 255, 1);
     max-width: 100vw;
+    color: rgb(13, 1, 24);
 }
 
 /* barra de navegação */
@@ -13,30 +20,24 @@ body {
 }
 
 .logo {
-    max-width: 8vw;
+    max-width: 150px;
 }
 
 .nav .nav-link:hover {
-    background-color: rgba(181, 116, 171, 1);
+    background-color: rgb(55, 19, 85);
     color: rgb(95, 206, 95);
+
 }
 
 .nav .nav-link {
-    color: rgba(2, 15, 7, 1);
+    color: rgb(13, 1, 24);
 }
-
-.navbar-brand:hover {
-    transform: scale(1.03);
-}
-
-
-
 
 .navbar-toggler {
     background-color: rgb(95, 206, 95);
 }
 
-/* seção sobre */
+/* seção inicio */
 #sobre {
     background-color: rgba(214, 222, 255, 1);
     color: black;
@@ -51,66 +52,75 @@ body {
     color:black;
 }
 
+.jsl {
+    color: rgb(55, 19, 85);
+}
+
+.titulosobre {
+    color: #28a745;
+}
 
 
 /* seção categorias */
 #categorias {
-    background-color: rgba(8, 9, 70, 0.6);
+    background-color: rgba(110, 66, 145, 0.2);
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 10px 2px rgba(6, 98, 236, 0.3);
-    color: rgb(2, 15, 7);
-
+    
 }
 
 .section-title {
-    color: rgb(95, 206, 95);
+    color: rgb(13, 1, 24);
     font-weight: 600;
-}
-
-.cardcat i {
-    color: #ce2b37;
 }
 
 .categoriah3 {
     color: rgb(95, 206, 95);
     font-size: 22px;
-    margin-top: 12px;
+    margin-top: 8px;
     font-weight: 600;
 }
 
+
 .textop {
-    color: white;
+    color: rgb(13, 1, 24) ;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 22px;
+    margin-left: 12px;
 }
+
 
 .cardcat:hover {
-    background-color: rgba(2, 15, 7, 0.6);
+    background-color: rgb(55, 19, 85);
     transform: scale(1.03);
+    box-shadow: 0px 0px 6px 2px rgba(214, 222, 255, 0.5);
 }
 
-.cardcat p {
-    margin-bottom: 0;
-}
 
 #service {
-    color: black;
+    color: rgb(13, 1, 24);
     background-color: rgba(214, 222, 255, 1);
 }
 
 /* barra lateral */
 aside {
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
     font-weight: 600;
 }
 
 
-.nav-service .nav-link:hover {
-    background-color: rgba(8, 9, 70, 0.6);
-    transform: scale(1.03);
+.nav-service .nav-link:hover{
+    background-color: rgba(55, 19, 85, 0.5);
+    transform: scale(1.02);
     color: white;
     box-shadow: 0px 0px 10px 2px rgba(6, 98, 236, 0.3);
+    transition: background-color 0.4s ease, transform 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.nav-pills .nav-link.active {
+    background-color: rgb(55, 19, 85); /* Substitua pela cor desejada */
+    color: #25D366; /* Cor do texto na sua guia ativa */
 }
 
 /* tab content */
@@ -140,10 +150,8 @@ aside {
 }
 
 #roadmap {
-    background-color: rgba(8, 9, 70, 0.6);
-    backdrop-filter: blur(10px);
-
     color: rgb(2, 15, 7);
+    margin-top: 20px;
 
 }
 
@@ -244,3 +252,4 @@ footer {
         font-size: 18px;
     }
 }
+
