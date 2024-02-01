@@ -1,0 +1,251 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:rgba(110, 66, 145, 1);
+    max-width: 100vw;
+}
+
+/* barra de navegação */
+.navbar {
+    background-color: rgba(110, 66, 145, 0.3);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(2, 15, 7, 0.3);
+    box-shadow: 0px 0px 10px 2px rgba(6, 98, 236, 0.3);
+}
+
+.logo {
+    max-width: 8vw;
+}
+
+.nav .nav-link:hover {
+    background-color: rgba(181, 116, 171, 1);
+    color: rgb(95, 206, 95);
+}
+
+.nav .nav-link {
+    color: rgba(2, 15, 7, 1);
+}
+
+.navbar-brand:hover {
+    transform: scale(1.03);
+}
+
+
+
+
+.navbar-toggler {
+    background-color: rgb(95, 206, 95);
+}
+
+/* seção sobre */
+#sobre {
+    background-color: rgba(214, 222, 255, 1);
+    color: black;
+    align-items: center;
+}
+
+#sobre img {
+    max-height: 340px;
+}
+
+#sobre h2 {
+    color:black;
+}
+
+
+
+/* seção categorias */
+#categorias {
+    background-color: rgba(8, 9, 70, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px 2px rgba(6, 98, 236, 0.3);
+    color: rgb(2, 15, 7);
+
+}
+
+.section-title {
+    color: rgb(95, 206, 95);
+    font-weight: 600;
+}
+
+.cardcat i {
+    color: #ce2b37;
+}
+
+.categoriah3 {
+    color: rgb(95, 206, 95);
+    font-size: 22px;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.textop {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.cardcat:hover {
+    background-color: rgba(2, 15, 7, 0.6);
+    transform: scale(1.03);
+}
+
+.cardcat p {
+    margin-bottom: 0;
+}
+
+#service {
+    color: black;
+    background-color: rgba(214, 222, 255, 1);
+}
+
+/* barra lateral */
+aside {
+    font-size: 16px;
+    width: 100%;
+    font-weight: 600;
+}
+
+.nav-service .nav-link-active {
+    background-color: black;
+    color: #5fce5f;
+    border-radius: 8px;
+}
+
+.nav-service .nav-link:hover {
+    background-color: rgba(8, 9, 70, 0.6);
+    transform: scale(1.03);
+    color: white;
+    box-shadow: 0px 0px 10px 2px rgba(6, 98, 236, 0.3);
+}
+
+/* tab content */
+.card {
+    background-color: rgba(110, 66, 145, 1);
+    backdrop-filter: blur(10px);
+    /* Ajuste o valor do desfoque conforme necessário */
+    color: black;
+    box-shadow: 0px 0px 10px 2px rgba(6, 98, 236, 0.3);
+    transition: background-color 0.4s ease, transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+
+    transform: scale(1.05);
+
+}
+
+.titulo-card{
+    font-weight: 22px;
+}
+
+.preco {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+#roadmap {
+    background-color: rgba(8, 9, 70, 0.6);
+    backdrop-filter: blur(10px);
+
+    color: rgb(2, 15, 7);
+
+}
+
+
+#contato button {
+    background-color: #25D366;
+    color: rgb(2, 15, 7);
+}
+
+#contato button:hover {
+    transform: scale(1.04);
+
+}
+
+#contato {
+    background-color: rgba(181, 116, 171, 1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px 2px rgba(6, 98, 236, 0.3);
+    color: rgb(2, 15, 7);
+}
+
+.formu {
+    color: #25D366;
+}
+.form-control:focus {
+    border-color: #25D366; /* Cor de destaque quando em foco */
+    box-shadow: 0 0 0 0.2rem rgba(6, 98, 236, 0.3); /* Sombra de destaque */
+    outline: 0; /* Remova a borda de destaque padrão no Firefox */
+}
+
+.mail {
+    color: white;
+}
+
+.mail:hover {
+    transform: scale(1.03);
+}
+
+
+#sl {
+    margin-top: 8%;
+}
+
+footer {
+    font-size: 14px;;
+}
+
+/*ajustes animação bolhas*/
+.dot {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 235, 59, 0.3);
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 2px rgba(217, 248, 160, 0.2);
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    opacity: 0.8;
+    /* Opacidade para um efeito de transparência */
+    background: radial-gradient(circle at 40% 20%, rgba(255, 59, 239, 0.3) 0%, rgba(88, 173, 194, 0.4) 60%);
+    /* Gradiente para um efeito mais natural */
+    z-index: -1;
+}
+
+.dots-container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.div-container {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width=767px) {
+    #sobre img {
+        max-height: 280px;
+    }
+
+    #categorias img {
+        max-height: 120px;
+    }
+
+    .dot {
+        position: absolute;
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .dots-container {
+        width: 100vw;
+    }
+
+    .textop {
+        color: white;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+}
