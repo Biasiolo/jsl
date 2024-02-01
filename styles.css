@@ -105,11 +105,6 @@ aside {
     font-weight: 600;
 }
 
-.nav-service .nav-link-active {
-    background-color: black;
-    color: #5fce5f;
-    border-radius: 8px;
-}
 
 .nav-service .nav-link:hover {
     background-color: rgba(8, 9, 70, 0.6);
