@@ -154,7 +154,7 @@ aside {
         transform: translateX(0) rotate(0);
     }
     50% {
-        transform: translateX(3%) rotate(1deg);
+        transform: translateX(3%) rotate(90deg);
     }
     100% {
         transform: translateX(0) rotate(0);
@@ -162,9 +162,9 @@ aside {
 }
 
 .zoom-in-image {
-    animation: zoomIn 1s infinite;
-
+    animation: zoomIn 1s 2;
 }
+
 
 .titulo-card {
     font-weight: 22px;
