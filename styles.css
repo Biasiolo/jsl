@@ -240,6 +240,11 @@ aside {
         max-height: 280px;
     }
 
+    #categorias, #roadmap {
+        background-position: center;
+        background-size: auto;
+    }
+
     .textop {
         margin-bottom: 30px;
         font-size: 18px;
