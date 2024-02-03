@@ -251,8 +251,8 @@ aside {
 
 
     #categorias, #roadmap {
-        background-image: url('./images/teste1-banner.png');
-        background-position: center;
+        background-image: url('./images/teste1-banner.png') !important;
+        background-position: center !important;
     }
 
 }
