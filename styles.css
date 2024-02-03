@@ -241,8 +241,9 @@ aside {
     }
 
     #categorias, #roadmap {
+        background-image: url('./images/teste1-banner.png');
         background-position: center;
-        background-size: auto;
+        background-size: cover;
     }
 
     .textop {
