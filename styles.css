@@ -240,15 +240,12 @@ aside {
         max-height: 280px;
     }
 
+    #categorias img {
+        max-height: 120px;
+    }
+
     .textop {
         margin-bottom: 30px;
         font-size: 18px;
     }
-
-
-    #categorias, #roadmap {
-        background-image: url('./images/teste1-banner.png') !important;
-        background-position: center !important;
-    }
-
 }
