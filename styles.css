@@ -250,23 +250,8 @@ aside {
     }
 
 
-    #categorias {
-
-        position: relative;
+    #categorias, #roadmap {
         background-image: url('./images/teste1-banner.png');
-        background-size: auto;  /* Modificado para 'cover' para ajustar a imagem de fundo */
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-
-        background-position: center;
-    }
-
-    #roadmap {
-        position: relative;
-        background-image: url('./images/teste1-banner.png');
-        background-size: auto;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-position: center;
     }
 
