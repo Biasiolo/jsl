@@ -241,9 +241,9 @@ aside {
     }
 
     #categorias, #roadmap {
-        background-image: url('./images/teste1-banner.png');
-        background-position: center;
-        background-size: cover;
+        background-image: url('./images/fundocel.png');
+        background-size: contain;
+
     }
 
     .textop {
