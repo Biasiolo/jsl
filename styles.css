@@ -8,7 +8,6 @@ body {
     font-family: 'Roboto', sans-serif;
     max-width: 100vw;
     background-color: rgb(219, 245, 234);
-    /* Adaptei a cor de fundo para a sua preferência */
     margin: 0;
 }
 
@@ -34,7 +33,7 @@ body {
 }
 
 .navbar-toggler {
-    background-color: #28a745;
+    background-color: #6A0572;
 }
 
 /* Seção Início */
@@ -46,7 +45,7 @@ body {
     max-height: 340px;
 }
 
-.jsl, .jsl2 {
+.jsl, .jsl2, .ele2 {
     color: #6A0572;
 }
 
@@ -58,33 +57,32 @@ body {
     color: #28a745;
 }
 
-
-/* seção categorias */
+/* Seção Categorias */
 #categorias {
     backdrop-filter: blur(10px);
-    padding-top: 4rem;
-    padding-bottom: 3rem;
+
     position: relative;
-    background-image: url('./images/banner2.png'); /* Substitua pelo caminho da sua imagem */
+    background-image: url('./images/banner2.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding: 100px 0;}
+
+#categorias .container {
+    padding: 80px 0;
 }
 
-.section-title {
-    color: #6A0572;
+.section-title, .section-title2 {
     font-size: 2.5rem;
     font-weight: bold;
+    color: #6A0572;
 }
 
 .section-title2 {
-    color: #DBF5EA;
-    font-size: 2.5rem;
-    font-weight: bold;
+    color: #dbf5ea;
 }
 .text-center i {
     color: #28a745;
-    /* Cor do ícone, ajuste conforme necessário */
     font-size: 3rem;
 }
 
@@ -92,7 +90,6 @@ body {
     margin-bottom: 20px;
     font-size: 1.5rem;
     line-height: 1.6;
-    /* Ajusta o espaçamento entre linhas */
     margin-left: 12px;
     color: rgb(13, 1, 24);
 }
@@ -103,19 +100,16 @@ body {
     box-shadow: 0px 0px 10px 2px rgba(2, 90, 53, 0.5);
 }
 
-
 #service {
     box-shadow: 0px 0px 10px 2px rgba(2, 90, 53, 0.5);
-
 }
 
-/* barra lateral */
+/* Barra Lateral */
 aside {
     font-size: 18px;
     width: 100%;
     font-weight: 600;
 }
-
 
 .nav-service .nav-link:hover {
     background-color: #C4A3E9;
@@ -127,17 +121,14 @@ aside {
 
 .nav-pills .nav-link.active {
     background-color: #6A0572;
-    /* Substitua pela cor desejada */
     color: #25D366;
-    /* Cor do texto na sua guia ativa */
 }
 
-/* tab content */
+/* Tab Content */
 .card {
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
-    /* Ajuste o valor do desfoque conforme necessário */
-    color: #6A0572;
+    color: rgb(13, 1, 24);
     box-shadow: 0px 0px 10px 2px rgba(2, 90, 53, 0.5);
     transition: background-color 0.4s ease, transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
     font-weight: 600;
@@ -146,16 +137,12 @@ aside {
 
 .card:hover {
     backdrop-filter: blur(10px);
-    /* Ajuste o valor do desfoque conforme necessário */
     box-shadow: 0px 0px 10px 2px rgba(2, 90, 53, 0.5);
     background-color: rgba(255, 255, 255, 1);
 }
 
 .card img {
     max-width: 300px;
-
-
-
 }
 
 @keyframes zoomIn {
@@ -176,11 +163,9 @@ aside {
     animation: zoomIn 1s 3;
 }
 
-
 .titulo-card {
     font-weight: 900;
     color: #6A0572;
-
 }
 
 .preco {
@@ -191,16 +176,15 @@ aside {
 
 #roadmap {
     position: relative;
-    background-image: url('./images/banner2.png'); /* Substitua pelo caminho da sua imagem */
+    background-image: url('./images/banner2.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-
 /* Ajuste o espaçamento e outras propriedades conforme necessário */
 #roadmap .container {
-    padding: 20px 0; /* Ajuste o espaçamento superior e inferior conforme necessário */
+    padding: 80px 0;
 }
 
 #contato button {
@@ -210,37 +194,38 @@ aside {
 
 #contato button:hover {
     transform: scale(1.04);
-
 }
 
 #contato {
     background-color: #6A0572;
     backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 10px 2px rgba(6, 98, 236, 0.3);
-    color: #C4A3E9;
+    box-shadow: 0px 0px 10px 2px rgba(2, 90, 53, 0.5);
+    color: #dbf5ea;
 }
 
-.formu {
+#contato a {
+    text-decoration: none;
+    color: #dbf5ea;
+}
+
+.formu, .ele {
     color: #25D366;
 }
 
+
 .form-control:focus {
     border-color: #25D366;
-    /* Cor de destaque quando em foco */
     box-shadow: 0 0 0 0.2rem rgba(6, 98, 236, 0.3);
-    /* Sombra de destaque */
     outline: 0;
-    /* Remova a borda de destaque padrão no Firefox */
 }
 
 .mail {
-    color: #C4A3E9;
+    color: rgb(219, 245, 234);
 }
 
 .mail:hover {
     transform: scale(1.03);
 }
-
 
 #sl {
     margin-top: 8%;
@@ -259,18 +244,8 @@ aside {
         max-height: 120px;
     }
 
-    .dot {
-        position: absolute;
-        width: 5vw;
-        height: 5vw;
-    }
-
-    .dots-container {
-        width: 100vw;
-    }
-
     .textop {
-        color: white;
+        color: rgb(219, 245, 234);
         margin-bottom: 30px;
         font-size: 18px;
     }

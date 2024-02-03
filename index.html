@@ -324,20 +324,24 @@
             </div>
         </div>
     </section>
-    
     <section id="contato" class="pt-2 pb-3">
         <div class="container">
             <div class="row">
-                <h2 class="text-center pt-4 pb-3 section-title2">Abra sua conta</h2>
+                <h2 class="text-start pt-4 pb-3 section-title2">Abra sua conta</h2>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-5">
-                    <form id="whatsappForm">
-                        <div class="mb-2 formu">
+            <div class="row">
+                <!-- Coluna do formulário -->
+                <div class="col-md-6">
+                    <form id="whatsappForm" class="formu">
+                        <div class="mb-2">
                             <label for="nome" class="form-label fw-bold">Seu Nome</label>
                             <input type="text" id="nome" name="nome" class="form-control">
                         </div>
-                        <div class="mb-4 formu">
+                        <div class="mb-2">
+                            <label for="email" class="form-label fw-bold">Seu Email</label>
+                            <input type="email" id="email" name="email" class="form-control">
+                        </div>
+                        <div class="mb-4">
                             <label for="mensagem" class="form-label fw-bold">Mensagem</label>
                             <textarea id="mensagem" name="mensagem" class="form-control"></textarea>
                         </div>
@@ -346,37 +350,45 @@
                                 <i class="bi bi-whatsapp"></i> Iniciar Conversa no WhatsApp
                             </button>
                         </div>
-
                     </form>
                 </div>
-            </div>
-
-            <script>
-                function enviarWhatsApp() {
-                    var nome = document.getElementById("nome").value;
-                    var mensagem = document.getElementById("mensagem").value;
-                    var linkWhatsApp = "https://api.whatsapp.com/send?phone=+5511985888974&text=Olá, gostaria de mais informações. Meu nome é " + encodeURIComponent(nome) + ". " + encodeURIComponent(mensagem) + ". ";
-                    window.open(linkWhatsApp, '_blank');
-                }
-            </script>
-            <div class="row justify-content-center mb-3">
-                <div class="col-md-6 text-center">
-                    <h3 class="fs-4 pt-4">
-                        <i class=" bi bi-envelope-at-fill"></i>
-                        Email
-                    </h3>
-                    <p class="mail"><a href="mailto:jsl_bank@jslbank.com"
-                            style="text-decoration: none; cursor: pointer; color: inherit;">jsl_bank@jslbank.com</a>
-                    </p>
-
+                <!-- Coluna dos links de contato -->
+                <div class="col-md-6 text-center d-flex justify-content-center align-items-start">
+                    <div class="row justify-content-center mb-5">
+                        <h2 class="text-center pt-3 pb-3 section-title2 fs-3">Siga nossas redes</h2>
+                        <div class="col-md-2 mb-4">
+                            <p class="mail">
+                                <a href="mailto:jsl_bank@jslbank.com" class="p-4 social-link"><i class="bi bi-envelope-at-fill fs-2"></i></a>
+                            </p>
+                        </div>
+                        <div class="col-md-2 mb-4">
+                            <p>
+                                <a href="https://www.facebook.com/seufacebook" target="_blank" class="p-4 social-link"><i class="bi bi-facebook fs-2"></i></a>
+                            </p>
+                        </div>
+                        <div class="col-md-2 mb-4">
+                            <p>
+                                <a href="https://www.instagram.com/seuinstagram" target="_blank" class="p-4 social-link"><i class="bi bi-instagram fs-2"></i></a>
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="m-4 pt-2">
+                                <strong>Central de Relacionamento:</strong> 3003 - 3030 (8h às 20h de segunda a sábado, exceto domingos e feriados) <br>
+                                <strong>SAC:</strong> 0800 772 1369 (8h às 20h de segunda a sábado, exceto domingos e feriados)
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    
+    
 
     <footer class="text-center">
         <div class="footer">
-            <p class="mt-2">Desenvolvido por <span class="pix">Pixe<span class="ele">l</span><span class="ele2">l</span>ers Studio</span>
+            <p class="mt-2">Desenvolvido por <span class="pix">Pixe<span class="ele">l</span><span class="ele2">l</span>ers Biasiolo Studio</span>
                 - 2023&copy; </p>
         </div>
         
