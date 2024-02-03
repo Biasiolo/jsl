@@ -240,7 +240,7 @@ aside {
         max-height: 280px;
     }
 
-    #catagorias, #roadmap {
+    #categorias, #roadmap {
         background-size: cover;
         background-image: url('./images/teste1-banner.png');
         background-position: center;
