@@ -187,6 +187,7 @@ aside {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 90vh;
+    padding: 20px;
 }
 
 /* Ajuste o espaçamento e outras propriedades conforme necessário */
