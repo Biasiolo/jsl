@@ -245,14 +245,12 @@ aside {
     #sobre {
         margin-top: 0;
         padding-top: 0;
-    }
-r
-    .jsl {
-        margin-top: 0;
+        text-align: center;
     }
 
+
     .jsl2 {
-        font-size: 1.4rem;
+        font-size: 1.42rem;
     }
 
     #categorias, #roadmap {
