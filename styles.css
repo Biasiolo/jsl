@@ -44,7 +44,44 @@ body {
     margin-top: 10vh;
 }
 
+.animated-text {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: moveText 10s ease-out infinite;
+    
 
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(2%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
+.pulsate {
+    animation: pulse 3s infinite;
+}
+
+/* Defina a animação de pulsação */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 #sobre img {
     max-height: 380px;
@@ -251,7 +288,7 @@ aside {
     }
 
     #categorias, #service {
-
+        margin-bottom: 30px; /* Adicione a margem inferior desejada */
         padding-bottom: 30px; 
     }
 
