@@ -254,4 +254,8 @@ aside {
         margin-bottom: 30px;
         font-size: 18px;
     }
+
+    #categorias, #sobre, #service, #contato {
+        padding: 0;
+    }
 }
