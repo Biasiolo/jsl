@@ -241,6 +241,19 @@ aside {
         max-height: 280px;
     }
 
+    #sobre {
+        margin-top: 0;
+        padding-top: 0;
+    }
+r
+    .jsl {
+        margin-top: 0;
+    }
+
+    .jsl2 {
+        font-size: 1.4rem;
+    }
+
     #categorias, #roadmap {
         background-image: url('./images/fundocel.png');
         background-size: contain;
