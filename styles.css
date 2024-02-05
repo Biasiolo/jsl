@@ -24,12 +24,12 @@ body {
 }
 
 .nav .nav-link:hover {
-    background-color: #4f0455;
+    background-color: #250227;
     color: rgb(95, 206, 95);
 }
 
 .nav .nav-link {
-    color: #4f0455;
+    color: #250227;
 }
 
 .navbar-toggler {
@@ -43,7 +43,7 @@ body {
     height: 90vh;
     margin-top: 10vh;
 }
-
+/*
 .animated-text {
     white-space: nowrap;
     overflow: hidden;
@@ -64,7 +64,18 @@ body {
     }
 
 }
+*/
 
+.btn-success {
+    background-color: #250227;
+    color:rgb(95, 206, 95);
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: rgb(95, 206, 95);
+    color:#250227
+}
 
 .pulsate {
     animation: pulse 3s infinite;
@@ -76,7 +87,24 @@ body {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.1);
+        transform: scale(1.11);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulsate1 {
+    animation: pulse 0.5s 2;
+}
+
+/* Defina a animação de pulsação */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.11);
     }
     100% {
         transform: scale(1);
@@ -88,7 +116,7 @@ body {
 }
 
 .jsl, .jsl2, .ele2 {
-    color: #4f0455;
+    color: #250227;
 }
 
 .jsl2 {
@@ -115,7 +143,7 @@ body {
 .section-title, .section-title2 {
     font-size: 3rem;
     font-weight: bold;
-    color: #4f0455;
+    color: #250227;
 }
 
 .section-title2 {
@@ -132,17 +160,51 @@ body {
     font-size: 1.5rem;
     line-height: 1.6;
     margin-left: 12px;
-    color: #6A0572;
+    color: #250227;
 }
 
 .cardcat:hover {
-    background-color: rgba(106, 5, 114, 0.5);
+    background-color: rgba(13, 250, 223, 0.2);
     transform: scale(1.04);
     box-shadow: 0px 0px 10px 2px rgba(2, 90, 53, 0.5);
 }
 
+#outra-secao {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.letreiro-container {
+    overflow: hidden;
+}
+
+.letreiro-img {
+    max-width: 100%;
+    height: auto;
+    animation: moveLetreiro 4s linear infinite;
+}
+
+@keyframes moveLetreiro {
+    0% {
+        transform: scale(0); 
+    }
+    50% {
+        transform: scale(0.4) rotate(45deg);
+    }
+    100% {
+        transform: scale(0) rotate(240deg); 
+    }
+
+
+}
+
+
+
+
 #service {
-    box-shadow: 0px 0px 10px 2px rgba(2, 90, 53, 0.5);
+
+    padding: 20px;
 }
 
 /* Barra Lateral */
@@ -155,13 +217,13 @@ aside {
 .nav-service .nav-link:hover {
     background-color: #C4A3E9;
     transform: scale(1.02);
-    color: #6A0572;
+    color: #250227;
     box-shadow: 0px 0px 10px 2px rgba(2, 90, 53, 0.5);
     transition: background-color 0.4s ease, transform 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .nav-pills .nav-link.active {
-    background-color: #6A0572;
+    background-color: #250227;
     color: #25D366;
 }
 
@@ -206,7 +268,7 @@ aside {
 
 .titulo-card {
     font-weight: 900;
-    color: #6A0572;
+    color: #250227;
 }
 
 .preco {
@@ -232,7 +294,7 @@ aside {
 
 #contato button {
     background-color: #25D366;
-    color: rgb(13, 1, 24);
+    color: #250227;
 }
 
 #contato button:hover {
