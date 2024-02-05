@@ -366,7 +366,7 @@ aside {
         padding-bottom: 30px; 
     }
 
-    #roadmap, #categorias, #outra-secao {
+    #outra-secao {
         background-attachment: scroll;
     }
 
