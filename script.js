@@ -53,3 +53,4 @@ window.addEventListener('scroll', function() {
     imgElement.style.transform = 'scale(' + zoomLevel + ')';
 });
 
+

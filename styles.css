@@ -40,7 +40,7 @@ body {
 /* Seção Início */
 #sobre {
     align-items: center;
-    height: 90vh;
+    height: 100%;
     margin-top: 10vh;
 }
 /*
@@ -136,6 +136,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+#categorias .container {
+    text-align: center; /* Centraliza horizontalmente */
 }
 
 
@@ -283,13 +289,14 @@ aside {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 90vh;
     padding: 20px;
+    backdrop-filter: blur(10px);
 }
 
 /* Ajuste o espaçamento e outras propriedades conforme necessário */
 #roadmap .container {
     padding: 80px 0;
+    text-align: center;
 }
 
 #contato button {
