@@ -347,9 +347,6 @@ aside {
 
 @media screen and (max-width: 767px) {
 
-    body {
-        background-attachment: scroll; /* Altere de fixed para scroll */
-    }
     #sobre img {
         max-height: 280px;
     }
@@ -367,6 +364,10 @@ aside {
     #categorias, #service {
         margin-bottom: 30px; /* Adicione a margem inferior desejada */
         padding-bottom: 30px; 
+    }
+
+    #roadmap, #categorias, #outra-secao {
+        background-attachment: scroll;
     }
 
 
