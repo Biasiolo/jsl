@@ -346,6 +346,10 @@ aside {
 }
 
 @media screen and (max-width: 767px) {
+
+    body {
+        background-attachment: scroll; /* Altere de fixed para scroll */
+    }
     #sobre img {
         max-height: 280px;
     }
